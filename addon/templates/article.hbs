@@ -1,6 +1,8 @@
 <article id=id>
   <header>
-    <h1 class="title">{{title}}</h1>
+    <h1 class="title">
+      {{link-to title 'article' year month day name}}
+    </h1>
   </header>
 
   <main>
@@ -8,13 +10,14 @@
   </main>
 
   <footer>
-    <p>
-      Posted in
-      <span class="category">{{category}}</span>
-      <span class="date">{{formattedDate}}</span>.
+    <p class="large-6 columns">
+      Posted <span class="date">{{formattedDate}}</span> in <span class="category">{{category}}</span>.
     </p>
-    {{#if tags}}
-      <p>Tags: {{tags}}</p>
-    {{/if}}
+    <div class="large-4 columns">&nbsp;</div>
+    <p id="more-link" class="large-2 columns">
+      {{#link-to 'article' year month day href class="tiny round secondary button"}}
+        more &raquo;
+      {{/link-to}}
+    </p>
   </footer>
 </article>

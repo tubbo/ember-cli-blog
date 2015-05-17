@@ -8,10 +8,6 @@ export default Page.extend({
   category: DS.attr('string'),
   tags: DS.attr('array'),
 
-  id: Ember.computed('date,title', function() {
-    return (this.get('title') || this.get('date'));
-  }),
-
   splitID: Ember.computed('id', function() {
     return this.get('id').split('-');
   }),
@@ -37,7 +33,8 @@ export default Page.extend({
     return moment(this.get('date')).fromNow();
   }.property('date'),
 
-  href: Ember.computed('id,dateFromID', function() {
+  name: Ember.computed('id,dateFromID', function() {
+    return this
     return this.get('id').split(this.get('dateFromID')+'-').join('');
   })
 });
