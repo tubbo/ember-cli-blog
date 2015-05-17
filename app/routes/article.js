@@ -6,8 +6,8 @@ export default Ember.Route.extend({
       params.year,
       params.month,
       params.day,
-      params.title
+      params.name
     ].join('-');
-    return this.store.find('article', id)
+    return this.store.find('article', id);
   });
 });
