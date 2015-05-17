@@ -40,9 +40,10 @@
   ],
   "dependencies": {
     "ember-cli-babel": "^5.0.0",
-    "ember-cli-static": "0.0.2"
+    "ember-cli-static": "0.0.3"
   },
   "ember-addon": {
-    "configPath": "tests/dummy/config"
+    "configPath": "tests/dummy/config",
+    "main": "index.js"
   }
 }
