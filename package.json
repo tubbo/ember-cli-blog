@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-blog",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "The default blueprint for ember-cli addons.",
   "directories": {
     "doc": "doc",
@@ -40,7 +40,7 @@
   ],
   "dependencies": {
     "ember-cli-babel": "^5.0.0",
-    "ember-cli-static": "0.0.1"
+    "ember-cli-static": "0.0.2"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
