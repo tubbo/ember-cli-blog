@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-blog",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The default blueprint for ember-cli addons.",
   "directories": {
     "doc": "doc",
@@ -15,6 +15,7 @@
   "engines": {
     "node": ">= 0.10.0"
   },
+  "main": "index.js",
   "author": "Tom Scott <tubbo@psychedeli.ca>",
   "license": "MIT",
   "devDependencies": {
