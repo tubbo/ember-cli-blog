@@ -1,6 +1,14 @@
-# Ember-cli-blog
+# ember-cli-blog
 
-This README outlines the details of collaborating on this Ember addon.
+An extension to [ember-cli-static][static] pages to support blogging
+features.
+
+## Features
+
+- Dates
+- Categories
+- Tags
+- Smart, title-optional URL generation
 
 ## Installation
 
